@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jay Rana</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jay Rana</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="section_text">
+            <p>Hello World, I'm</p>
+            <h1>Jay Rana</h1>
+            <p2>Software Engineer</p2>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Logo"
+                class="icon" onclick=location.href='https://www.linkedin.com/in/ranajay531/';>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/redhex.png" alt="Jay Rana Photo">
+                </div>
+                <div class="about-col-2">
+                    <p class="about-subtitle">Get to Know More</p>
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-text">I am currently an undergraduate student interested in technology. After graduating, I would like to continue my education in a master's program or pursue a career in software engineering.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="toggleTab('edu')">EDUCATION</p>
+                        <p class="tab-links" onclick="toggleTab('courses')">RELEVANT COURSES</p>
+                        <p class="tab-links" onclick="toggleTab('activities')">ACTIVITIES</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="edu">
+                        <ul>
+                            <li><span1>Rutgers University</span1><br>New Brunswick, NJ</li>
+                            <li><span>Anticipated Graduation</span><br>May 2026</li>
+                            <li><span>GPA</span><br>3.893/4.0</li>
+                            <li><span>Major</span><br>Bachelor of Science in Computer Science<br>Bachelor of Science in Data Science<br>Minor in Cognitive Science</li>
+                            <li><span>Honors</span><br>School of Arts & Sciences Honor Program<br>Dean's List</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>Computer Science</span><br>Data Structures<br>Discrete Structures I<br>Computer Architecture</li>
+                            <li><span>Data Science</span><br>Data 101<br>Data in Context</li>
+                            <li><span>Other</span><br>Intro to Linear Algebra<br>Physics 2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="activities">
+                        <ul>
+                            <li><span>Academic Organizations</span><br>Undergraduate Student Alliance of Computer Scientists (USACS)<br>
+                                Rutgers Mobile App Development (RUMAD)<br>
+                                Institute of Electrical and Electronics Engineers (IEEE) - ML/AI Division<br>
+                                Data Science Club</li>
+                            <li><span>Interest Organizations</span><br>The Daily Targum (Newspaper) - News Writer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="project-text">
+            <p class="about-subtitle">Explore My Work</p>
+            <h1 class="about-title">Projects</h1>
+        </div>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <h1 class="card-title">Stock Price Predictor</h1>
+                        <img src="assets/closingpriceofgoog.png" alt="Graph of Closing Price of GOOG">
+                        <p class="card-text">A regression supervised learning project to predict the closing prices of various stocks.</p>
+                        <p class="card-tools">(Python, NumPy, Matplotlib, Pandas, Tensorflow)</p>
+                        <button class="btn" onclick=location.href='https://github.com/ranajay531/StockPricePredictor'>Github </button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <h1 class="card-title">Digit Classifier</h1>
+                        <img src="assets/mnist 5.png" alt="Image of Number 5">
+                        <p class="card-text">Machine learning project utilizing convolutional neural networks to identify numerical digits from images.</p>
+                        <p class="card-tools">(Python, Matplotlib, mnist Database)</p>
+                        <button class="btn" onclick=location.href="https://github.com/ranajay531/DigitClassifier">Github</button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <h1 class="card-title">Personal Website</h1>
+                        <img src="assets/website-screenshot.png" alt="Screenshot of Website Hero">
+                        <p class="card-text">This website that displays professional background information and project portfolio details.</p>
+                        <p class="card-tools">(HTML, CSS, Javascript)</p>
+                        <button class="btn">Github</button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <h1 class="card-title">Login System</h1>
+                        <p class="card-text">A client-server model for a secure log-in system that verifies user input with the data.</p>
+                        <p class="card-tools">(Python, SQLite)</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <h1 class="card-title">Prerequisite Checker</h1>
+                        <p class="card-text">A program for CS students to verify their course eligibility status at Rutgers.</p>
+                        <p class="card-tools">(Java)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class ="contact" id="contact">
+        <div class="container"></div>
+        <div class="row">
+            <div class="contact-col-1">
+                <p class="contact-subtitle">Get in Touch</p>
+                <h1 class="contact-title">Contact Me</h1>
+                <p class="contact-text"><i class='bx bxl-gmail'></i> ranajay531@gmail.com</p>
+                <p class="contact-text"><i class='bx bxs-phone'></i> (732)294-3344</p>
+            </div>
+            <div class="contact-col-2">
+                <form name="submit-to-google-sheet">
+                    <div class="input-box">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="text" name="Subject" placeholder="Message Subject">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <input type="tel" name="Phone" placeholder="Phone Number (XXX-XXX-XXXX)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Website by Jay Rana | Last Updated: January 2023</p>
+        </div>
+    </footer>
+    <script>
+        const scriptURL = '<SCRIPT URL>'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
