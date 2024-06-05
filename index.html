@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Jay's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -43,8 +44,8 @@
             <h1>Jay Rana</h1>
             <p2>Software Engineer</p2>
             <div class="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Logo"
-                class="icon" onclick=location.href='https://www.linkedin.com/in/ranajay531/';>
+                <i class='bx bxl-linkedin' alt="LinkedIn Logo" onclick=location.href='https://www.linkedin.com/in/ranajay531/';></i>
+                <i class='bx bxl-github' alt="Github Logo" onclick=location.href='https://github.com/ranajay531';></i>
             </div>
         </div>
     </section>
@@ -67,25 +68,25 @@
                         <ul>
                             <li><span1>Rutgers University</span1><br>New Brunswick, NJ</li>
                             <li><span>Anticipated Graduation</span><br>May 2026</li>
-                            <li><span>GPA</span><br>3.893/4.0</li>
-                            <li><span>Major</span><br>Bachelor of Science in Computer Science<br>Bachelor of Science in Data Science<br>Minor in Cognitive Science</li>
+                            <li><span>GPA</span><br>3.95/4.0</li>
+                            <li><span>Major</span><br>Bachelor of Science in Computer Science & Data Science<br>Minor in Cognitive Science</li>
                             <li><span>Honors</span><br>School of Arts & Sciences Honor Program<br>Dean's List</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="courses">
                         <ul>
-                            <li><span>Computer Science</span><br>Data Structures<br>Discrete Structures I<br>Computer Architecture</li>
-                            <li><span>Data Science</span><br>Data 101<br>Data in Context</li>
-                            <li><span>Other</span><br>Intro to Linear Algebra<br>Physics 2</li>
+                            <li><span>Computer Science</span><br>Data Structures<br>Discrete Structures<br>Computer Architecture</li>
+                            <li><span>Data Science</span><br>Data 101<br>Data in Context<br>Statistical Inference for Data Science<br>Intro to Data Science</li>
+                            <li><span>Other</span><br>Intro to Linear Algebra<br>General Physics 2<br>Honors Multivariable Calculus</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="activities">
                         <ul>
-                            <li><span>Academic Organizations</span><br>Undergraduate Student Alliance of Computer Scientists (USACS)<br>
+                            <li><span>Technical Organizations</span><br>Undergraduate Student Alliance of Computer Scientists (USACS)<br>
                                 Rutgers Mobile App Development (RUMAD)<br>
                                 Institute of Electrical and Electronics Engineers (IEEE) - ML/AI Division<br>
                                 Data Science Club</li>
-                            <li><span>Interest Organizations</span><br>The Daily Targum (Newspaper) - News Writer</li>
+                            <li><span>Interest Organizations</span><br>The Daily Targum (Newspaper) - Associate Copy Editor<br>SAS Honors Program Peer Mentor</li>
                         </ul>
                     </div>
                 </div>
@@ -123,7 +124,7 @@
                         <img src="assets/website-screenshot.png" alt="Screenshot of Website Hero">
                         <p class="card-text">This website that displays professional background information and project portfolio details.</p>
                         <p class="card-tools">(HTML, CSS, Javascript)</p>
-                        <button class="btn" onclick=location.href="https://github.com/ranajay531/ranajay531.github.io">Github</button>
+                        <button class="btn">Github</button>
                     </div>
                 </div>
                 <div class="swiper-slide card">
@@ -156,7 +157,11 @@
                 <p class="contact-text"><i class='bx bxs-phone'></i> (732)294-3344</p>
             </div>
             <div class="contact-col-2">
-                <form name="submit-to-google-sheet">
+                <form action="https://formsubmit.co/ranajay531@email.com" method="POST">
+                    <!-- Honepot -->
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="input-box">
                         <input type="text" name="Name" placeholder="Full Name" required>
                         <input type="text" name="Subject" placeholder="Message Subject">
@@ -174,20 +179,9 @@
     </section>
     <footer class="footer">
         <div class="footer-text">
-            <p>Website by Jay Rana | Last Updated: January 2023</p>
+            <p>Website by Jay Rana | Last Updated: January 2024</p>
         </div>
     </footer>
-    <script>
-        const scriptURL = '<SCRIPT URL>'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
