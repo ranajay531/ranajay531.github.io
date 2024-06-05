@@ -1,10 +1,14 @@
 <?php
 
-    $name = $_POST['Name'];
-    $user_email = $_POST['Email'];
-    $subject = $_POST['Subject'];
-    $message = $_POST['Message'];
-    $phone = $_POST['Phone'];
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+if(isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $user_email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $phone = $_POST['phone'];
 
     $email_from = "ranajay531@gmail.com";
     $email_subject = "New Form Submission: $subject";
@@ -19,5 +23,6 @@
 
     mail($to, $email_subject, $email_body, $headers);
     header("Location: index.html");
+}
 
 ?>
