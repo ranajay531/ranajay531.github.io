@@ -157,10 +157,7 @@
                 <p class="contact-text"><i class='bx bxs-phone'></i> (732)294-3344</p>
             </div>
             <div class="contact-col-2">
-                <form action="https://formsubmit.co/ranajay531@gmail.com" method="POST">
-                    <!-- Honepot -->
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_captcha" value="false">
+                <form action="contact-form-handler.php" method="POST">
 
                     <div class="input-box">
                         <input type="text" name="Name" placeholder="Full Name" required>
@@ -168,7 +165,7 @@
                     </div>
                     <div class="input-box">
                         <input type="email" name="Email" placeholder="Email Address" required>
-                        <input type="tel" name="Phone" placeholder="Phone Number (XXX-XXX-XXXX)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <input type="tel" name="Phone" placeholder="Phone Number (XXX-XXX-XXXX)">
                     </div>
                     <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                     <button class="btn" type="submit">Submit</button>
