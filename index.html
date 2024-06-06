@@ -157,17 +157,21 @@
                 <p class="contact-text"><i class='bx bxs-phone'></i> (732)294-3344</p>
             </div>
             <div class="contact-col-2">
-                <form action="https://formsubmit.co/ranajay531@gmail.com" method="POST">
+                <form id="myform" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="54714018-7792-43a5-bce1-1ebca7e45bdb">
+                    <input type="hidden" name="subject" value="New Submission from Personal Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <div class="input-box">
                         <input type="text" name="name" placeholder="Full Name" required>
-                        <input type="text" name="subject" placeholder="Message Subject">
+                        <input type="text" name="Subject" placeholder="Message Subject">
                     </div>
                     <div class="input-box">
                         <input type="email" name="email" placeholder="Email Address" required>
                         <input type="tel" name="phone" placeholder="Phone Number (XXX-XXX-XXXX)">
                     </div>
                     <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
-                    <button name="submit" class="btn" type="submit">Submit Again</btn>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button name="submit" class="btn" type="submit">Submit Form</button>
                 </form>
             </div>
         </div>
@@ -178,6 +182,7 @@
             <p>Website by Jay Rana | Last Updated: January 2024</p>
         </div>
     </footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
