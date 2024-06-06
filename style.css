@@ -159,6 +159,27 @@ section {
     display: flex;
 }
 
+/* Thank you */
+
+.thank-container {
+    height: 74vh;
+    justify-content: center;
+    padding: 20vh;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-container h1 {
+    font-size: 40px;
+    color: #D80032;
+}
+
+.thank-container p {
+    font-size: 20px;
+    padding: 1rem 0 2rem 0;
+    color: #2b2d42;
+}
+
 /* Hero */
 #hero {
     background-image: url(assets/hero-background.jpg);
@@ -505,6 +526,31 @@ section {
 .footer {
     color:#edf2f4;
     background-color: #2b2d42;
-    padding: 2rem 10%;
+    height: 10vh;
+    color: edf2f4;
+}
 
+.footer-text {
+    float:left;
+    text-align: left;
+    padding: 4vh 10%;
+    font-size: 2vh;
+}
+
+.social-container{
+    float: right;
+    padding: 3vh 10%;
+    font-size: 4vh;
+    text-align: right;
+}
+
+.social-container i{
+   padding: 0 0.5rem;
+   text-shadow: 0 0 0.75rem #edf2f4;
+}
+
+.social-container i:hover {
+    color: #edf2f4;
+    cursor: pointer;
+    text-shadow: none;
 }
