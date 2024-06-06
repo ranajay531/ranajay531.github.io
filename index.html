@@ -44,7 +44,7 @@
             <h1>Jay Rana</h1>
             <p2>Software Engineer</p2>
             <div class="socials-container">
-                <i class='bx bxl-linkedin' alt="LinkedIn Logo" onclick=location.href='https://www.linkedin.com/in/ranajay531/';></i>
+                <i class='bx bxl-linkedin-square' alt="LinkedIn Logo" onclick=location.href='https://www.linkedin.com/in/ranajay531/';></i>
                 <i class='bx bxl-github' alt="Github Logo" onclick=location.href='https://github.com/ranajay531';></i>
             </div>
         </div>
@@ -69,7 +69,7 @@
                             <li><span1>Rutgers University</span1><br>New Brunswick, NJ</li>
                             <li><span>Anticipated Graduation</span><br>May 2026</li>
                             <li><span>GPA</span><br>3.95/4.0</li>
-                            <li><span>Major</span><br>Bachelor of Science in Computer Science & Data Science<br>Minor in Cognitive Science</li>
+                            <li><span>Majors</span><br>Bachelor of Science in Computer Science & Data Science<br>Minor in Cognitive Science</li>
                             <li><span>Honors</span><br>School of Arts & Sciences Honor Program<br>Dean's List</li>
                         </ul>
                     </div>
@@ -83,9 +83,10 @@
                     <div class="tab-contents" id="activities">
                         <ul>
                             <li><span>Technical Organizations</span><br>Undergraduate Student Alliance of Computer Scientists (USACS)<br>
-                                Rutgers Mobile App Development (RUMAD)<br>
                                 Institute of Electrical and Electronics Engineers (IEEE) - ML/AI Division<br>
-                                Data Science Club</li>
+                                Blueprint - Software Engineering Fellowship<br>
+                                Data Science Club<br>
+                                Rutgers Mobile App Development (RUMAD)</li>
                             <li><span>Interest Organizations</span><br>The Daily Targum (Newspaper) - Associate Copy Editor<br>SAS Honors Program Peer Mentor</li>
                         </ul>
                     </div>
@@ -130,14 +131,14 @@
                 <div class="swiper-slide card">
                     <div class="card-content">
                         <h1 class="card-title">Login System</h1>
-                        <p class="card-text">A client-server model for a secure log-in system that verifies user input with the data.</p>
+                        <p class="card-text">A client-server model for a secure log-in system that verifies user input with stored data.</p>
                         <p class="card-tools">(Python, SQLite)</p>
                     </div>
                 </div>
                 <div class="swiper-slide card">
                     <div class="card-content">
                         <h1 class="card-title">Prerequisite Checker</h1>
-                        <p class="card-text">A program for CS students to verify their course eligibility status at Rutgers.</p>
+                        <p class="card-text">A program for CS students to verify their course eligibility status at Rutgers University.</p>
                         <p class="card-tools">(Java)</p>
                     </div>
                 </div>
@@ -161,6 +162,7 @@
                     <input type="hidden" name="access_key" value="54714018-7792-43a5-bce1-1ebca7e45bdb">
                     <input type="hidden" name="subject" value="New Submission from Personal Website">
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="https://ranajay531.github.io/#formsubmitted">
                     <div class="input-box">
                         <input type="text" name="name" placeholder="Full Name" required>
                         <input type="text" name="Subject" placeholder="Message Subject">
@@ -171,7 +173,7 @@
                     </div>
                     <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
                     <div class="h-captcha" data-captcha="true"></div>
-                    <button name="submit" class="btn" type="submit">Submit Form</button>
+                    <button name="submit" class="btn" type="submit">Send Message</button>
                 </form>
             </div>
         </div>
@@ -179,10 +181,35 @@
     </section>
     <footer class="footer">
         <div class="footer-text">
-            <p>Website by Jay Rana | Last Updated: January 2024</p>
+            <p>Website by Jay Rana | Last Updated: May 2024</p>
+        </div>
+        <div class="social-container">
+            <i class='bx bxl-linkedin-square' alt="LinkedIn Logo" onclick=location.href='https://www.linkedin.com/in/ranajay531/';></i>
+            <i class='bx bxl-github' alt="Github Logo" onclick=location.href='https://github.com/ranajay531';></i>
         </div>
     </footer>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+        const form = document.getElementById('myform');
+        
+        form.addEventListener('submit', function(e) {
+        
+            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+        
+            if (!hCaptcha) {
+                e.preventDefault();
+                alert("Please fill out captcha field")
+                return
+            }
+        });
+        form.reset();
+        </script>
+    <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

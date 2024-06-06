@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Form Submitted</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jay Rana</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jay Rana</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="submitted">
+        <div class="thank-container">
+            <h1>Contact Form Submitted</h1>
+            <p>Thank you for submitting the form. I will get back to you soon.</p>
+            <button onclick=location.href="index.html#contact" class="btn">Go Back</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Website by Jay Rana | Last Updated: January 2024</p>
+        </div>
+        <div class="social-container">
+            <i class='bx bxl-linkedin-square' alt="LinkedIn Logo" onclick=location.href='https://www.linkedin.com/in/ranajay531/';></i>
+            <i class='bx bxl-github' alt="Github Logo" onclick=location.href='https://github.com/ranajay531';></i>
+        </div>
+    </footer>
+    
+</body>
+</html>
