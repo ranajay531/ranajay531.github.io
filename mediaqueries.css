@@ -45,7 +45,7 @@
         background-color: rgba(237, 242, 244, .1);
     }
 
-    #about, #projects, #contact{
+    #about, #projects, #contact #submitted{
         padding: 4vh;
         padding-top: 3rem;
     }
@@ -108,6 +108,11 @@
 
     .card .card-content {     
         height:32rem;
+    }
+
+    .thank-container{
+        padding: 1rem;
+        margin: 1rem;
     }
 
 }
