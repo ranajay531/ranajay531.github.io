@@ -5,4 +5,109 @@
     #hamburger-nav {
         display: flex;
     }
+    #hero {
+        background-image: url(assets/herobackresponsive.jpg);
+        z-index: 1;
+    }
+
+    .menu-links{
+        z-index: 99;
+    }
+    section {
+        padding-top: 1vh;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: fit-content;
+    }
+
+    .section_text{
+        margin: 2rem 2rem;      
+    }
+
+    .section_text p1 {
+        font-size: 24px;
+        background-color: rgba(237, 242, 244, .1);
+    }
+
+    .section_text h1 {
+        font-size: 74px;
+        display: inline;
+        background-color: rgba(237, 242, 244, .1);
+    }
+    
+    .section_text p2 {
+        font-size: 21px;
+        background-color: rgba(237, 242, 244, .1);
+    }
+    
+    .socials-container i {
+        font-size: 34px;
+        background-color: rgba(237, 242, 244, .1);
+    }
+
+    #about, #projects, #contact{
+        padding: 4vh;
+        padding-top: 3rem;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .about-subtitle, .about-title, .about-text, .contact-subtitle, .contact-title{
+        text-align: center;
+    }
+
+    .tab-titles {
+        display: flex;
+        margin: 2rem 0;
+        width: 100%
+    }
+    
+    .tab-links {
+        margin-right: 1rem;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .contact-col-1, .contact-col-2 {
+        flex-basis: 100%;
+    }
+
+    .contact-col-2 {
+        margin-top: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        height: fit-content;
+    }
+    
+    .footer-text {
+        padding: 3vh;
+        font-size: 2vh;
+        display: flex;
+    }
+    
+    .social-container{
+        padding: 3vh 3vh 3vh 0;
+        display: flex;
+    }
+    
+    .social-container i{
+       padding: 0 0.5rem;
+       text-shadow: 0 0 0.75rem #edf2f4;
+    }
+    
+    .social-container i:hover {
+        color: #edf2f4;
+        cursor: pointer;
+        text-shadow: none;
+    }
+
+    .card .card-content {     
+        height:32rem;
+    }
+
 }

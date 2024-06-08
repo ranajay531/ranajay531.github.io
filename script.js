@@ -40,7 +40,6 @@ ScrollReveal().reveal('.about-col-1, .swiper', { origin: 'bottom' });
 /* Swiper */
 const swiper = new Swiper('.mySwiper', {
   // Optional parameters
-  slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
   loop: true,
@@ -66,12 +65,15 @@ const swiper = new Swiper('.mySwiper', {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
     950: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     1200: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
   }
 });

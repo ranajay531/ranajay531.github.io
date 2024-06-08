@@ -265,6 +265,7 @@ section {
 .about-col-2 {
     flex: 1;
     padding: 0 2rem;
+    width: 100%
 }
 
 .about-subtitle {
@@ -288,6 +289,7 @@ section {
 .tab-titles {
     display: flex;
     margin: 18px 0 40px;
+    width: 100%
 }
 
 .tab-links {
@@ -337,6 +339,7 @@ section {
 
 .tab-contents {
     display: none;
+    width: 100%;
 }
 
 .tab-contents.active-tab {
@@ -372,21 +375,20 @@ section {
     background: #edf2f4;
     border: 3px solid #D80032;
     border-radius: 20px;
-
 }
 
 .card .card-content {
     position:relative;
-    height: 28rem;
     display:flex;
+    height:30rem;
     align-items: center;
     flex-direction: column;
     padding: 50px;
 }
 
 .card-content img {
-    height: 30%;
-    margin: 0.5rem;
+    height: 15vh;
+    margin: 1vh;
     border: 1.5px solid #D80032;
     border-radius: 5px;
 }
@@ -431,6 +433,10 @@ section {
 }
 
 /* --- Contact --- */
+
+#contact {
+    padding: 80px 10rem;
+}
 .contact-col-1 {
     flex-basis: 35%
 }
@@ -449,14 +455,12 @@ section {
     color:#ef233c;
     font-size: 40px;
     text-align: left;
-    margin-left: 10rem;
 }
 
 
-.contact-col-1 p {
+.contact-text {
     text-align: left;
     margin-top: 1rem;
-    margin-left: 10rem;
     color:#2b2d42;
 }
 
@@ -477,7 +481,6 @@ section {
 
 .contact form {
     max-width: 70rem;
-    margin: 1rem 10rem 3rem 0;
     text-align: left;
 }
 
