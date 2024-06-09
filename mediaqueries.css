@@ -45,7 +45,7 @@
         background-color: rgba(237, 242, 244, .1);
     }
 
-    #about, #projects, #contact #submitted{
+    #about, #projects, #contact, #submitted{
         padding: 4vh;
         padding-top: 3rem;
     }
