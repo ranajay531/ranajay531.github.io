@@ -79,6 +79,10 @@
         margin-top: 1rem;
     }
 
+    .contact-text {
+        color: 2b2d42;
+    }
+
     .footer {
         display: flex;
         height: fit-content;
@@ -93,11 +97,6 @@
     .social-container{
         padding: 3vh 3vh 3vh 0;
         display: flex;
-    }
-    
-    .social-container i{
-       padding: 0 0.5rem;
-       text-shadow: 0 0 0.75rem #edf2f4;
     }
     
     .social-container i:hover {
