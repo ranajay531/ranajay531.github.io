@@ -210,6 +210,42 @@ section {
     color: #2b2d42;
 }
 
+.inner-headings {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid #ddd;
+    height: 50px;
+    font-weight: 300;
+    color: #2b2d42;
+    line-height: 50px;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.inner-headings span {
+    position: relative;
+    animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -50px;
+    }
+    50% {
+        top: -100px;
+    }
+    75% {
+        top: -150px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 .socials-container {
     display:flex;
     justify-content: left;
@@ -337,6 +373,11 @@ section {
     font-size:18px;
 }
 
+.tab-contents ul li span2 {
+    color:#edf2f4;
+    font-style: italic;
+}
+
 .tab-contents {
     display: none;
     width: 100%;
@@ -436,6 +477,9 @@ section {
 
 #contact {
     padding: 80px 10rem;
+    background: #f7f7f7 url(./assets/geometry.png) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .contact-col-1 {
     flex-basis: 35%
